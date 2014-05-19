@@ -1,5 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
+<<<<<<< HEAD
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -I..\..\..\..\..\Users\OZAN\Documents\GitHub\STM32F4_IVME\cmsis_boot -I..\..\..\..\..\Users\OZAN\Documents\GitHub\STM32F4_IVME\OzanLib -I..\..\..\..\..\Users\OZAN\Documents\GitHub -I..\..\..\..\..\Users\OZAN\Documents\GitHub\STM32F4_IVME -I..\..\..\..\..\Users\OZAN\Documents\GitHub\STM32F4_IVME\cmsis">
+      <target file="system_stm32f4xx.o" lastModified="14611cb516b">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="1460be3ae7b"/>
+      </target>
+      <target file="main.o" lastModified="14611cb50c8">
+         <source file="..\..\..\main.c" lastModified="14611cb077e"/>
+      </target>
+      <target file="startup_stm32f4xx.o" lastModified="14611cb4fc8">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="1460be3ae6f"/>
+=======
    <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test03\cmsis_boot -I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test03 -I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test03\cmsis -I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test03\OzanLib -I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx">
       <target file="system_stm32f4xx.o" lastModified="1460ce007a7">
          <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="1460be3ae7b"/>
@@ -29,6 +40,7 @@
       </target>
       <target file="misc.o" lastModified="1460cb09091">
          <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="1460be441f9"/>
+>>>>>>> parent of 9da905a... Durum degiskenleri eklendi
       </target>
    </processor>
 </history>

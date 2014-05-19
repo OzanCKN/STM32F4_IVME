@@ -1,8 +1,16 @@
 #include "STM32F4xx.h"
 
+ //dasdasd
 unsigned char PWM[8]; // PWM registerler
 unsigned char SRG[8]; // Shadow Registerler
 unsigned char CNTR; // PWM Counter
+<<<<<<< HEAD
+
+//bayraklar
+char x = 0, y = 0; //koordinat bayraklarimiz
+
+=======
+>>>>>>> parent of 9da905a... Durum degiskenleri eklendi
 /*****************************************************************************************************
  CPU PLL ile 168Mhz de kosturulur
  AHB frekansy 168 Mhz
@@ -51,7 +59,6 @@ void SystemInit2() {
 }
 void TIM7_IRQHandler() {
 	unsigned short d, i, j;
-
 	TIM7->SR = 0; // Timer Int Flagini silelim
 	d = GPIOD->ODR | 0xFF00;
 	CNTR++;
