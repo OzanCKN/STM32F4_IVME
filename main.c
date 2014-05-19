@@ -3,6 +3,10 @@
 unsigned char PWM[8]; // PWM registerler
 unsigned char SRG[8]; // Shadow Registerler
 unsigned char CNTR; // PWM Counter
+
+//bayraklar
+char x = 0, y = 0;
+
 /*****************************************************************************************************
  CPU PLL ile 168Mhz de kosturulur
  AHB frekansy 168 Mhz
@@ -53,7 +57,8 @@ void TIM7_IRQHandler() {
 	unsigned short d, i, j;
 
 	TIM7->SR = 0; // Timer Int Flagini silelim
-	d = GPIOD->ODR | 0xFF00;
+	//d = GPIOD->ODR | 0xFF00; //bu satira gerek yok, o pinleri baska bir is icin kullanamayiz yoksa
+	d = 0xFF00;
 	CNTR++;
 	if (!CNTR) {
 		for (i = 0; i < 8; i++)
@@ -65,7 +70,39 @@ void TIM7_IRQHandler() {
 			d &= ~j;
 		j = j >> 1;
 	}
-	GPIOD->ODR = d;
+
+	if (((d) & (1 << 12)) - (1 << 12) == 0) { //demekki 12. bit 1 olmus yani yesil led yani led4 yani +y kordinati
+		GPIOD->ODR |= (1 << 12);
+		y = 0;
+	} else {
+		GPIOD->ODR &= ~(1 << 12);
+		//y=1;
+	}
+
+	if (((d) & (1 << 13)) - (1 << 13) == 0) { //demekki 13. bit 1 olmus yani turuncu led yani led3 yani +y kordinati
+		GPIOD->ODR |= (1 << 13);
+		y = 1;
+	} else {
+		GPIOD->ODR &= ~(1 << 13);
+	}
+
+	if (((d) & (1 << 14)) - (1 << 14) == 0) { //demekki 14. bit 1 olmus yani kirmizi led yani led5 yani +x kordinati
+		GPIOD->ODR |= (1 << 14);
+		x = 1;
+	} else {
+		GPIOD->ODR &= ~(1 << 14);
+
+	}
+
+	if (((d) & (1 << 15)) - (1 << 15) == 0) { //demekki 15. bit 1 olmus yani mavi led yani led6 yani -y kordinati
+		GPIOD->ODR |= (1 << 15);
+		y = 0;
+	} else {
+		GPIOD->ODR &= ~(1 << 15);
+		//y=1;
+	}
+
+	//GPIOD->ODR = d;
 }
 signed char SPI_CMD(short DAT) {
 	signed char RxDat;
@@ -149,9 +186,9 @@ int main() {
 
 	TIM7->DIER = 0x0000; // Update Int disable
 	while (1) {
-		for (i = 0; i < 0x1000000; i++)
-			;
-		GPIOD->ODR ^= 0x0000F000;
+		for (i = 0; i < 0x1000000; i++) { //bekle
+		}
+		//GPIOD->ODR ^= 0x0000F000; //tum ledleri yak //bu satira gerek yok, o pinleri baska bir is icin kullanamayiz yoksa
 	}
 
 }

@@ -1,63 +1,30 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dependencies>
-   <includePath signature="/I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test03\cmsis_boot /I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test03 /I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test03\cmsis /I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test03\OzanLib /I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx">
-      <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="1460be3b293">
+   <includePath signature="/I..\..\..\..\..\Users\gokhan\Documents\GitHub\STM32F4_IVME\OzanLib /I..\..\..\..\..\Users\gokhan\Documents\GitHub\STM32F4_IVME /I..\..\..\..\..\Users\gokhan\Documents\GitHub\STM32F4_IVME\cmsis_boot /I..\..\..\..\..\Users\gokhan\Documents\GitHub\STM32F4_IVME\cmsis /I..\..\..\..\..\Users\gokhan\Documents\GitHub">
+      <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="14611941b8b">
       </source>
-      <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="1460be3b296">
+      <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="14611941b90">
       </source>
-      <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="1460be3ae6f">
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="146119417ad">
       </source>
-      <source file="..\..\..\main.c" lastModified="1460ce14cb7">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\cmsis\core_cm4.h" lastModified="1460be3b27b">
+      <source file="..\..\..\cmsis\core_cm4.h" lastModified="14611941b82">
          <include file="..\..\..\cmsis\core_cmInstr.h"/>
          <include file="..\..\..\cmsis\core_cmFunc.h"/>
          <include file="..\..\..\cmsis\core_cm4_simd.h"/>
       </source>
-      <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="1460be3ae7e">
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="146119417bf">
       </source>
-      <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="1460be3ae7b">
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="146119417bd">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
-      <source file="..\..\..\cmsis\core_cm4_simd.h" lastModified="1460be3b28f">
+      <source file="..\..\..\cmsis\core_cm4_simd.h" lastModified="14611941b86">
       </source>
-      <source file="..\..\..\cmsis_boot\stm32f4xx_conf.h" lastModified="1460be41020">
+      <source file="..\..\..\cmsis_boot\stm32f4xx_conf.h" lastModified="14611947960">
       </source>
-      <source file="..\..\..\cmsis_boot\stm32f4xx.h" lastModified="1460be3b25d">
+      <source file="..\..\..\cmsis_boot\stm32f4xx.h" lastModified="14611941b9f">
          <include file="..\..\..\cmsis\core_cm4.h"/>
          <include file="..\..\..\cmsis_boot\system_stm32f4xx.h"/>
          <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
-      </source>
-   </includePath>
-   <includePath signature="/I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test03\cmsis_boot /I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test03 /I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test03\cmsis /I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test03\Main /I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test03\OzanLib /I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx">
-      <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="1460be3ae6f">
-      </source>
-      <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="1460be3ae7e">
-      </source>
-      <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="1460be3ae7b">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-   </includePath>
-   <includePath signature="/I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test03\cmsis_lib\include /I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test03\cmsis_boot /I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test03 /I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test03\cmsis /I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test03\Main /I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test03\cmsis_lib /I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test03\OzanLib /I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx">
-      <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="1460be3ae6f">
-      </source>
-      <source file="..\..\..\Main\timer.h" lastModified="1460c1f9eee">
-         <include file="..\..\..\Main\main.h"/>
-      </source>
-      <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="1460be3ae7e">
-      </source>
-      <source file="..\..\..\Main\gpio.h" lastModified="1460c0ec1ba">
-         <include file="..\..\..\Main\main.h"/>
-      </source>
-      <source file="..\..\..\Main\timer.c" lastModified="1460c1e8e59">
-         <include file="..\..\..\Main\timer.h"/>
-      </source>
-      <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="1460be3ae7b">
-         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
-      </source>
-      <source file="..\..\..\Main\gpio.c" lastModified="1460c0f75f6">
-         <include file="..\..\..\Main\gpio.h"/>
       </source>
    </includePath>
 </dependencies>
