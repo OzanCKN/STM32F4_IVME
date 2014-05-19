@@ -27,8 +27,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x30 ..\obj\system_stm32f4xx.o
  .debug_ranges  0x00000000       0x20 ..\obj\system_stm32f4xx.o
- .debug_line    0x00000000      0x202 ..\obj\system_stm32f4xx.o
- .debug_str     0x00000000      0x3b0 ..\obj\system_stm32f4xx.o
+ .debug_line    0x00000000      0x1fe ..\obj\system_stm32f4xx.o
+ .debug_str     0x00000000      0x3ae ..\obj\system_stm32f4xx.o
  .comment       0x00000000       0x71 ..\obj\system_stm32f4xx.o
  .ARM.attributes
                 0x00000000       0x33 ..\obj\system_stm32f4xx.o
@@ -293,15 +293,15 @@ OUTPUT(Timers01.elf elf32-littlearm)
  .debug_ranges  0x00000000       0x18 ..\obj\startup_stm32f4xx.o
  .debug_ranges  0x00000018       0x38 ..\obj\main.o
 
-.debug_line     0x00000000      0x3a8
- .debug_line    0x00000000       0xa7 ..\obj\startup_stm32f4xx.o
- .debug_line    0x000000a7      0x301 ..\obj\main.o
+.debug_line     0x00000000      0x3a0
+ .debug_line    0x00000000       0xa5 ..\obj\startup_stm32f4xx.o
+ .debug_line    0x000000a5      0x2fb ..\obj\main.o
 
-.debug_str      0x00000000      0x478
- .debug_str     0x00000000      0x13b ..\obj\startup_stm32f4xx.o
-                                0x14d (size before relaxing)
- .debug_str     0x0000013b      0x33d ..\obj\main.o
-                                0x42f (size before relaxing)
+.debug_str      0x00000000      0x474
+ .debug_str     0x00000000      0x139 ..\obj\startup_stm32f4xx.o
+                                0x14b (size before relaxing)
+ .debug_str     0x00000139      0x33b ..\obj\main.o
+                                0x42d (size before relaxing)
 
 .comment        0x00000000       0x70
  .comment       0x00000000       0x70 ..\obj\startup_stm32f4xx.o
