@@ -2,16 +2,22 @@
 <history>
    <processor signature="arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -g -nostartfiles -Map=Timers01.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\Timers01 -TC:\CooCox\CoIDE\configuration\ProgramData\Timers01/arm-gcc-link.ld -g">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4bbfe235436137f8b41582c9cbada6e80be69ee6
       <target file="Timers01.elf" lastModified="14611cb59fb">
          <source file="..\obj\startup_stm32f4xx.o" lastModified="14611cb4fc8"/>
          <source file="..\obj\main.o" lastModified="14611cb50c8"/>
          <source file="..\obj\system_stm32f4xx.o" lastModified="14611cb516b"/>
+<<<<<<< HEAD
 =======
       <target file="Timers01.elf" lastModified="1460ce15368">
          <source file="..\obj\startup_stm32f4xx.o" lastModified="1460ce0064b"/>
          <source file="..\obj\main.o" lastModified="1460ce15129"/>
          <source file="..\obj\system_stm32f4xx.o" lastModified="1460ce007a7"/>
 >>>>>>> parent of 9da905a... Durum degiskenleri eklendi
+=======
+>>>>>>> 4bbfe235436137f8b41582c9cbada6e80be69ee6
       </target>
    </processor>
 </history>

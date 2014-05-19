@@ -13,7 +13,6 @@ Discarded input sections
  .bss           0x00000000        0x0 ..\obj\startup_stm32f4xx.o
  .text          0x00000000        0x0 ..\obj\main.o
  .data          0x00000000        0x0 ..\obj\main.o
- .bss           0x00000000        0x0 ..\obj\main.o
  .text          0x00000000        0x0 ..\obj\system_stm32f4xx.o
  .data          0x00000000       0x14 ..\obj\system_stm32f4xx.o
  .bss           0x00000000        0x0 ..\obj\system_stm32f4xx.o
@@ -29,12 +28,17 @@ Discarded input sections
                 0x00000000       0x30 ..\obj\system_stm32f4xx.o
  .debug_ranges  0x00000000       0x20 ..\obj\system_stm32f4xx.o
 <<<<<<< HEAD
+<<<<<<< HEAD
  .debug_line    0x00000000      0x1fe ..\obj\system_stm32f4xx.o
  .debug_str     0x00000000      0x3ae ..\obj\system_stm32f4xx.o
 =======
  .debug_line    0x00000000      0x1f2 ..\obj\system_stm32f4xx.o
  .debug_str     0x00000000      0x3a8 ..\obj\system_stm32f4xx.o
 >>>>>>> parent of 9da905a... Durum degiskenleri eklendi
+=======
+ .debug_line    0x00000000      0x1fe ..\obj\system_stm32f4xx.o
+ .debug_str     0x00000000      0x3ae ..\obj\system_stm32f4xx.o
+>>>>>>> 4bbfe235436137f8b41582c9cbada6e80be69ee6
  .comment       0x00000000       0x71 ..\obj\system_stm32f4xx.o
  .ARM.attributes
                 0x00000000       0x33 ..\obj\system_stm32f4xx.o
@@ -52,7 +56,7 @@ Linker script and memory map
 
                 0x20020000                _eram = 0x20020000
 
-.text           0x08000000      0x6a4
+.text           0x08000000      0x738
  *(.isr_vector)
  .isr_vector    0x08000000      0x188 ..\obj\startup_stm32f4xx.o
                 0x08000000                g_pfnVectors
@@ -157,16 +161,16 @@ Linker script and memory map
                 0x080001ec      0x160 ..\obj\main.o
                 0x080001ec                SystemInit2
  .text.TIM7_IRQHandler
-                0x0800034c       0xa8 ..\obj\main.o
+                0x0800034c      0x14c ..\obj\main.o
                 0x0800034c                TIM7_IRQHandler
- .text.SPI_CMD  0x080003f4       0x70 ..\obj\main.o
-                0x080003f4                SPI_CMD
- .text.Write    0x08000464       0x34 ..\obj\main.o
-                0x08000464                Write
- .text.Read     0x08000498       0x2c ..\obj\main.o
-                0x08000498                Read
- .text.main     0x080004c4      0x1e0 ..\obj\main.o
-                0x080004c4                main
+ .text.SPI_CMD  0x08000498       0x70 ..\obj\main.o
+                0x08000498                SPI_CMD
+ .text.Write    0x08000508       0x34 ..\obj\main.o
+                0x08000508                Write
+ .text.Read     0x0800053c       0x2c ..\obj\main.o
+                0x0800053c                Read
+ .text.main     0x08000568      0x1d0 ..\obj\main.o
+                0x08000568                main
  *(.init)
  *(.fini)
  *crtbegin.o(.ctors)
@@ -182,35 +186,35 @@ Linker script and memory map
  *(.rodata*)
  *(.eh_fram e*)
 
-.glue_7         0x080006a4        0x0
+.glue_7         0x08000738        0x0
  .glue_7        0x00000000        0x0 linker stubs
 
-.glue_7t        0x080006a4        0x0
+.glue_7t        0x08000738        0x0
  .glue_7t       0x00000000        0x0 linker stubs
 
-.vfp11_veneer   0x080006a4        0x0
+.vfp11_veneer   0x08000738        0x0
  .vfp11_veneer  0x00000000        0x0 linker stubs
 
-.v4_bx          0x080006a4        0x0
+.v4_bx          0x08000738        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
-.iplt           0x080006a4        0x0
+.iplt           0x08000738        0x0
  .iplt          0x00000000        0x0 ..\obj\startup_stm32f4xx.o
 
-.rel.dyn        0x080006a4        0x0
+.rel.dyn        0x08000738        0x0
  .rel.iplt      0x00000000        0x0 ..\obj\startup_stm32f4xx.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x080006a4                __exidx_start = .
+                0x08000738                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x080006a4                __exidx_end = .
-                0x080006a4                __etext = .
-                0x080006a4                _sidata = __etext
+                0x08000738                __exidx_end = .
+                0x08000738                __etext = .
+                0x08000738                _sidata = __etext
 
-.data           0x20000000        0x0 load address 0x080006a4
+.data           0x20000000        0x0 load address 0x08000738
                 0x20000000                __data_start__ = .
                 0x20000000                _sdata = __data_start__
  *(vtable)
@@ -237,35 +241,38 @@ Linker script and memory map
 .igot.plt       0x20000000        0x0
  .igot.plt      0x00000000        0x0 ..\obj\startup_stm32f4xx.o
 
-.bss            0x20000000       0x14
+.bss            0x20000000       0x18
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                __bss_start__ = .
                 0x20000000                _sbss = __bss_start__
  *(.bss*)
+ .bss           0x20000000        0x2 ..\obj\main.o
+                0x20000000                x
+                0x20000001                y
  *(COMMON)
- COMMON         0x20000000       0x14 ..\obj\main.o
-                0x20000000                CNTR
-                0x20000004                SRG
-                0x2000000c                PWM
-                0x20000014                . = ALIGN (0x4)
-                0x20000014                __bss_end__ = .
-                0x20000014                _ebss = __bss_end__
+ *fill*         0x20000002        0x2 
+ COMMON         0x20000004       0x14 ..\obj\main.o
+                0x20000004                CNTR
+                0x20000008                SRG
+                0x20000010                PWM
+                0x20000018                . = ALIGN (0x4)
+                0x20000018                __bss_end__ = .
+                0x20000018                _ebss = __bss_end__
 
-.heap           0x20000014        0x0
-                0x20000014                __end__ = .
-                0x20000014                _end = __end__
-                0x20000014                end = __end__
+.heap           0x20000018        0x0
+                0x20000018                __end__ = .
+                0x20000018                _end = __end__
+                0x20000018                end = __end__
  *(.heap*)
-                0x20000014                __HeapLimit = .
+                0x20000018                __HeapLimit = .
 
-.co_stack       0x20000014      0x804
+.co_stack       0x20000018      0x800
                 0x20000018                . = ALIGN (0x8)
- *fill*         0x20000014        0x4 
  *(.co_stack .co_stack.*)
  .co_stack      0x20000018      0x800 ..\obj\startup_stm32f4xx.o
                 0x20000018                pulStack
                 0x20020000                __StackTop = (ORIGIN (ram) + 0x20000)
-                0x2001f7fc                __StackLimit = (__StackTop - SIZEOF (.co_stack))
+                0x2001f800                __StackLimit = (__StackTop - SIZEOF (.co_stack))
                 0x20020000                PROVIDE (__stack, __StackTop)
                 0x00000001                ASSERT ((__StackLimit >= __HeapLimit), region ram  overflowed with stack)
 LOAD ..\obj\startup_stm32f4xx.o
@@ -278,9 +285,9 @@ LOAD c:/program files (x86)/gnu tools arm embedded/4.8 2014q1/bin/../lib/gcc/arm
 END GROUP
 OUTPUT(Timers01.elf elf32-littlearm)
 
-.debug_info     0x00000000      0xa63
+.debug_info     0x00000000      0xa81
  .debug_info    0x00000000       0xed ..\obj\startup_stm32f4xx.o
- .debug_info    0x000000ed      0x976 ..\obj\main.o
+ .debug_info    0x000000ed      0x994 ..\obj\main.o
 
 .debug_abbrev   0x00000000      0x243
  .debug_abbrev  0x00000000       0xb0 ..\obj\startup_stm32f4xx.o
@@ -296,6 +303,7 @@ OUTPUT(Timers01.elf elf32-littlearm)
  .debug_ranges  0x00000000       0x18 ..\obj\startup_stm32f4xx.o
  .debug_ranges  0x00000018       0x38 ..\obj\main.o
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 .debug_line     0x00000000      0x3a0
  .debug_line    0x00000000       0xa5 ..\obj\startup_stm32f4xx.o
@@ -317,6 +325,17 @@ OUTPUT(Timers01.elf elf32-littlearm)
  .debug_str     0x00000133      0x335 ..\obj\main.o
                                 0x427 (size before relaxing)
 >>>>>>> parent of 9da905a... Durum degiskenleri eklendi
+=======
+.debug_line     0x00000000      0x3a0
+ .debug_line    0x00000000       0xa5 ..\obj\startup_stm32f4xx.o
+ .debug_line    0x000000a5      0x2fb ..\obj\main.o
+
+.debug_str      0x00000000      0x474
+ .debug_str     0x00000000      0x139 ..\obj\startup_stm32f4xx.o
+                                0x14b (size before relaxing)
+ .debug_str     0x00000139      0x33b ..\obj\main.o
+                                0x42d (size before relaxing)
+>>>>>>> 4bbfe235436137f8b41582c9cbada6e80be69ee6
 
 .comment        0x00000000       0x70
  .comment       0x00000000       0x70 ..\obj\startup_stm32f4xx.o

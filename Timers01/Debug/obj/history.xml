@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
 <<<<<<< HEAD
+<<<<<<< HEAD
    <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -I..\..\..\..\..\Users\OZAN\Documents\GitHub\STM32F4_IVME\cmsis_boot -I..\..\..\..\..\Users\OZAN\Documents\GitHub\STM32F4_IVME\OzanLib -I..\..\..\..\..\Users\OZAN\Documents\GitHub -I..\..\..\..\..\Users\OZAN\Documents\GitHub\STM32F4_IVME -I..\..\..\..\..\Users\OZAN\Documents\GitHub\STM32F4_IVME\cmsis">
       <target file="system_stm32f4xx.o" lastModified="14611cb516b">
          <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="1460be3ae7b"/>
@@ -13,22 +14,16 @@
 =======
    <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test03\cmsis_boot -I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test03 -I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test03\cmsis -I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test03\OzanLib -I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx">
       <target file="system_stm32f4xx.o" lastModified="1460ce007a7">
+=======
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -I..\..\..\..\..\Users\OZAN\Documents\GitHub\STM32F4_IVME\cmsis_boot -I..\..\..\..\..\Users\OZAN\Documents\GitHub\STM32F4_IVME\OzanLib -I..\..\..\..\..\Users\OZAN\Documents\GitHub -I..\..\..\..\..\Users\OZAN\Documents\GitHub\STM32F4_IVME -I..\..\..\..\..\Users\OZAN\Documents\GitHub\STM32F4_IVME\cmsis">
+      <target file="system_stm32f4xx.o" lastModified="14611cb516b">
+>>>>>>> 4bbfe235436137f8b41582c9cbada6e80be69ee6
          <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="1460be3ae7b"/>
       </target>
-      <target file="startup_stm32f4xx.o" lastModified="1460ce0064b">
-         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="1460be3ae6f"/>
+      <target file="main.o" lastModified="14611cb50c8">
+         <source file="..\..\..\main.c" lastModified="14611cb077e"/>
       </target>
-      <target file="main.o" lastModified="1460ce15129">
-         <source file="..\..\..\main.c" lastModified="1460ce14cb7"/>
-      </target>
-   </processor>
-   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F407VG -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test03\cmsis_lib\include -I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test03\cmsis_boot -I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test03 -I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test03\cmsis -I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test03\Main -I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test03\cmsis_lib -I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx\Test03\OzanLib -I..\..\..\..\..\Users\OZAN\Desktop\CoocoxEx">
-      <target file="stm32f4xx_gpio.o" lastModified="1460cb08f27">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="1460be4730a"/>
-      </target>
-      <target file="timer.o" lastModified="1460cb08b24">
-         <source file="..\..\..\Main\timer.c" lastModified="1460c1e8e59"/>
-      </target>
+<<<<<<< HEAD
       <target file="stm32f4xx_tim.o" lastModified="1460cb09233">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="1460be3d580"/>
       </target>
@@ -41,6 +36,10 @@
       <target file="misc.o" lastModified="1460cb09091">
          <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="1460be441f9"/>
 >>>>>>> parent of 9da905a... Durum degiskenleri eklendi
+=======
+      <target file="startup_stm32f4xx.o" lastModified="14611cb4fc8">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="1460be3ae6f"/>
+>>>>>>> 4bbfe235436137f8b41582c9cbada6e80be69ee6
       </target>
    </processor>
 </history>
