@@ -5,7 +5,7 @@ unsigned char SRG[8]; // Shadow Registerler
 unsigned char CNTR; // PWM Counter
 
 //bayraklar
-char x = 0, y = 0;
+char x = 0, y = 0; //koordinat bayraklarimiz
 
 /*****************************************************************************************************
  CPU PLL ile 168Mhz de kosturulur
