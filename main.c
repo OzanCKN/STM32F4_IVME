@@ -1,11 +1,12 @@
 #include "STM32F4xx.h"
 
+ //dasdasd
 unsigned char PWM[8]; // PWM registerler
 unsigned char SRG[8]; // Shadow Registerler
 unsigned char CNTR; // PWM Counter
 
 //bayraklar
-char x = 0, y = 0;
+char x = 0, y = 0; //koordinat bayraklarimiz
 
 /*****************************************************************************************************
  CPU PLL ile 168Mhz de kosturulur
@@ -55,7 +56,6 @@ void SystemInit2() {
 }
 void TIM7_IRQHandler() {
 	unsigned short d, i, j;
-
 	TIM7->SR = 0; // Timer Int Flagini silelim
 	//d = GPIOD->ODR | 0xFF00; //bu satira gerek yok, o pinleri baska bir is icin kullanamayiz yoksa
 	d = 0xFF00;
